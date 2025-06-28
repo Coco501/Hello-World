@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>helloworld</title>
+  <link rel="icon" href="../media/earth.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <button class="sidebar-toggle" onclick="toggleSidebar()">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+    <a href="home.html" class="logo">
+      <img src="../media/earth.png" alt="Earth icon" />
+      <span>helloworld</span>
+    </a>
+    <div class="nav-right">
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+  <aside class="sidebar" id="languageSidebar">
+    <div class="sidebar-header">
+      <h3>Languages</h3>
+      <button class="close-btn" onclick="closeSidebar()">&times;</button>
+    </div>
+    <div class="sidebar-content">
+      <a href="languages/arabic.html" class="sidebar-link">
+        <span class="flag">🇸🇦</span>
+        <span class="language-text">
+          <span class="language-name">Arabic</span>
+          <span class="language-native">العربية</span>
+        </span>
+      </a>
+      <a href="languages/bengali.html" class="sidebar-link">
+        <span class="flag">🇧🇩</span>
+        <span class="language-text">
+          <span class="language-name">Bengali</span>
+          <span class="language-native">বাংলা</span>
+        </span>
+      </a>
+      <a href="languages/chinese.html" class="sidebar-link">
+        <span class="flag">🇨🇳</span>
+        <span class="language-text">
+          <span class="language-name">Chinese</span>
+          <span class="language-native">中文</span>
+        </span>
+      </a>
+      <a href="languages/danish.html" class="sidebar-link">
+        <span class="flag">🇩🇰</span>
+        <span class="language-text">
+          <span class="language-name">Danish</span>
+          <span class="language-native">Dansk</span>
+        </span>
+      </a>
+      <a href="languages/dutch.html" class="sidebar-link">
+        <span class="flag">🇳🇱</span>
+        <span class="language-text">
+          <span class="language-name">Dutch</span>
+          <span class="language-native">Nederlands</span>
+        </span>
+      </a>
+      <a href="languages/english.html" class="sidebar-link">
+        <span class="flag">🇬🇧</span>
+        <span class="language-text">
+          <span class="language-name">English</span>
+          <span class="language-native">English</span>
+        </span>
+      </a>
+      <a href="languages/finnish.html" class="sidebar-link">
+        <span class="flag">🇫🇮</span>
+        <span class="language-text">
+          <span class="language-name">Finnish</span>
+          <span class="language-native">Suomi</span>
+        </span>
+      </a>
+      <a href="languages/french.html" class="sidebar-link">
+        <span class="flag">🇫🇷</span>
+        <span class="language-text">
+          <span class="language-name">French</span>
+          <span class="language-native">Français</span>
+        </span>
+      </a>
+      <a href="languages/german.html" class="sidebar-link">
+        <span class="flag">🇩🇪</span>
+        <span class="language-text">
+          <span class="language-name">German</span>
+          <span class="language-native">Deutsch</span>
+        </span>
+      </a>
+      <a href="languages/hindi.html" class="sidebar-link">
+        <span class="flag">🇮🇳</span>
+        <span class="language-text">
+          <span class="language-name">Hindi</span>
+          <span class="language-native">हिन्दी</span>
+        </span>
+      </a>
+      <a href="languages/italian.html" class="sidebar-link">
+        <span class="flag">🇮🇹</span>
+        <span class="language-text">
+          <span class="language-name">Italian</span>
+          <span class="language-native">Italiano</span>
+        </span>
+      </a>
+      <a href="languages/japanese.html" class="sidebar-link">
+        <span class="flag">🇯🇵</span>
+        <span class="language-text">
+          <span class="language-name">Japanese</span>
+          <span class="language-native">日本語</span>
+        </span>
+      </a>
+      <a href="languages/korean.html" class="sidebar-link">
+        <span class="flag">🇰🇷</span>
+        <span class="language-text">
+          <span class="language-name">Korean</span>
+          <span class="language-native">한국어</span>
+        </span>
+      </a>
+      <a href="languages/norwegian.html" class="sidebar-link">
+        <span class="flag">🇳🇴</span>
+        <span class="language-text">
+          <span class="language-name">Norwegian</span>
+          <span class="language-native">Norsk</span>
+        </span>
+      </a>
+      <a href="languages/portuguese.html" class="sidebar-link">
+        <span class="flag">🇵🇹</span>
+        <span class="language-text">
+          <span class="language-name">Portuguese</span>
+          <span class="language-native">Português</span>
+        </span>
+      </a>
+      <a href="languages/russian.html" class="sidebar-link">
+        <span class="flag">🇷🇺</span>
+        <span class="language-text">
+          <span class="language-name">Russian</span>
+          <span class="language-native">Русский</span>
+        </span>
+      </a>
+      <a href="languages/spanish.html" class="sidebar-link">
+        <span class="flag">🇪🇸</span>
+        <span class="language-text">
+          <span class="language-name">Spanish</span>
+          <span class="language-native">Español</span>
+        </span>
+      </a>
+      <a href="languages/swedish.html" class="sidebar-link">
+        <span class="flag">🇸🇪</span>
+        <span class="language-text">
+          <span class="language-name">Swedish</span>
+          <span class="language-native">Svenska</span>
+        </span>
+      </a>
+      <a href="languages/thai.html" class="sidebar-link">
+        <span class="flag">🇹🇭</span>
+        <span class="language-text">
+          <span class="language-name">Thai</span>
+          <span class="language-native">ไทย</span>
+        </span>
+      </a>
+      <a href="languages/urdu.html" class="sidebar-link">
+        <span class="flag">🇵🇰</span>
+        <span class="language-text">
+          <span class="language-name">Urdu</span>
+          <span class="language-native">اردو</span>
+        </span>
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <h1>Say hello to the world</h1>
+    <h3>Welcome! Willkommen! ¡Bienvenido! Bienvenue! Huānyíng! Welkom!</h3>
+
+    <!-- Language Selection Section -->
+    <section class="language-selection">
+      <h2>Choose a Language</h2>
+      <div class="language-grid">
+        <a href="languages/arabic.html" class="language-card">
+          <span class="language-flag">🇸🇦</span>
+          <div class="language-info">
+            <span class="language-name">Arabic</span>
+            <span class="language-native">العربية</span>
+          </div>
+        </a>
+        <a href="languages/bengali.html" class="language-card">
+          <span class="language-flag">🇧🇩</span>
+          <div class="language-info">
+            <span class="language-name">Bengali</span>
+            <span class="language-native">বাংলা</span>
+          </div>
+        </a>
+        <a href="languages/chinese.html" class="language-card">
+          <span class="language-flag">🇨🇳</span>
+          <div class="language-info">
+            <span class="language-name">Chinese</span>
+            <span class="language-native">中文</span>
+          </div>
+        </a>
+        <a href="languages/danish.html" class="language-card">
+          <span class="language-flag">🇩🇰</span>
+          <div class="language-info">
+            <span class="language-name">Danish</span>
+            <span class="language-native">Dansk</span>
+          </div>
+        </a>
+        <a href="languages/dutch.html" class="language-card">
+          <span class="language-flag">🇳🇱</span>
+          <div class="language-info">
+            <span class="language-name">Dutch</span>
+            <span class="language-native">Nederlands</span>
+          </div>
+        </a>
+        <a href="languages/english.html" class="language-card">
+          <span class="language-flag">🇬🇧</span>
+          <div class="language-info">
+            <span class="language-name">English</span>
+            <span class="language-native">English</span>
+          </div>
+        </a>
+        <a href="languages/finnish.html" class="language-card">
+          <span class="language-flag">🇫🇮</span>
+          <div class="language-info">
+            <span class="language-name">Finnish</span>
+            <span class="language-native">Suomi</span>
+          </div>
+        </a>
+        <a href="languages/french.html" class="language-card">
+          <span class="language-flag">🇫🇷</span>
+          <div class="language-info">
+            <span class="language-name">French</span>
+            <span class="language-native">Français</span>
+          </div>
+        </a>
+        <a href="languages/german.html" class="language-card">
+          <span class="language-flag">🇩🇪</span>
+          <div class="language-info">
+            <span class="language-name">German</span>
+            <span class="language-native">Deutsch</span>
+          </div>
+        </a>
+        <a href="languages/hindi.html" class="language-card">
+          <span class="language-flag">🇮🇳</span>
+          <div class="language-info">
+            <span class="language-name">Hindi</span>
+            <span class="language-native">हिन्दी</span>
+          </div>
+        </a>
+        <a href="languages/italian.html" class="language-card">
+          <span class="language-flag">🇮🇹</span>
+          <div class="language-info">
+            <span class="language-name">Italian</span>
+            <span class="language-native">Italiano</span>
+          </div>
+        </a>
+        <a href="languages/japanese.html" class="language-card">
+          <span class="language-flag">🇯🇵</span>
+          <div class="language-info">
+            <span class="language-name">Japanese</span>
+            <span class="language-native">日本語</span>
+          </div>
+        </a>
+        <a href="languages/korean.html" class="language-card">
+          <span class="language-flag">🇰🇷</span>
+          <div class="language-info">
+            <span class="language-name">Korean</span>
+            <span class="language-native">한국어</span>
+          </div>
+        </a>
+        <a href="languages/norwegian.html" class="language-card">
+          <span class="language-flag">🇳🇴</span>
+          <div class="language-info">
+            <span class="language-name">Norwegian</span>
+            <span class="language-native">Norsk</span>
+          </div>
+        </a>
+        <a href="languages/portuguese.html" class="language-card">
+          <span class="language-flag">🇵🇹</span>
+          <div class="language-info">
+            <span class="language-name">Portuguese</span>
+            <span class="language-native">Português</span>
+          </div>
+        </a>
+        <a href="languages/russian.html" class="language-card">
+          <span class="language-flag">🇷🇺</span>
+          <div class="language-info">
+            <span class="language-name">Russian</span>
+            <span class="language-native">Русский</span>
+          </div>
+        </a>
+        <a href="languages/spanish.html" class="language-card">
+          <span class="language-flag">🇪🇸</span>
+          <div class="language-info">
+            <span class="language-name">Spanish</span>
+            <span class="language-native">Español</span>
+          </div>
+        </a>
+        <a href="languages/swedish.html" class="language-card">
+          <span class="language-flag">🇸🇪</span>
+          <div class="language-info">
+            <span class="language-name">Swedish</span>
+            <span class="language-native">Svenska</span>
+          </div>
+        </a>
+        <a href="languages/thai.html" class="language-card">
+          <span class="language-flag">🇹🇭</span>
+          <div class="language-info">
+            <span class="language-name">Thai</span>
+            <span class="language-native">ไทย</span>
+          </div>
+        </a>
+        <a href="languages/urdu.html" class="language-card">
+          <span class="language-flag">🇵🇰</span>
+          <div class="language-info">
+            <span class="language-name">Urdu</span>
+            <span class="language-native">اردو</span>
+          </div>
+        </a>
+      </div>
+<!--      <button class="cta-button">Explore All Languages</button>-->
+    </section>
+  </main>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('languageSidebar');
+      const overlay = document.querySelector('.sidebar-overlay');
+      
+      sidebar.classList.toggle('open');
+      overlay.classList.toggle('active');
+      document.body.classList.toggle('sidebar-open');
+    }
+
+    function closeSidebar() {
+      const sidebar = document.getElementById('languageSidebar');
+      const overlay = document.querySelector('.sidebar-overlay');
+      
+      sidebar.classList.remove('open');
+      overlay.classList.remove('active');
+      document.body.classList.remove('sidebar-open');
+    }
+  </script>
+</body>
+</html>
