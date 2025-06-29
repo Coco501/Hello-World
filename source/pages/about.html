@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>helloworld</title>
+    <link rel="icon" href="../assets/images/earth.png" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <button class="sidebar-toggle" onclick="toggleSidebar()">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+        <a href="home.html" class="logo">
+            <img src="../assets/images/earth.png" alt="Earth icon" />
+            <span>helloworld</span>
+        </a>
+        <div class="nav-right">
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- main content here -->
+      <section class="about-section">
+        <h2>About the Project</h2>
+        <div class="about-content">
+          <p>
+            <span class="project-name">helloworld</span>
+            is a small passion project of mine that is meant to teach people
+            the very basics of any language they can think of. The idea is to
+            give the briefest of introductions to a language, with simple terms like 'hello',
+            'thank you', and so on, along with some fun facts.
+            <br><br>
+            My motivation for the project came from an excitement around
+            language learning, as well as a love for traveling. I thought
+            the project would be a nice combination of the two. It was also
+            the perfect opportunity to further my skills in web development,
+            a field I have always been curious about.
+            <br><br>
+            Thank you so much for checking it out! I hope you found
+            it entertaining and/or useful.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Initialize the sidebar when the page loads
+        document.addEventListener('DOMContentLoaded', createSidebar);
+    </script>
+</body>
+</html>
